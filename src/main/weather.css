@@ -1,0 +1,136 @@
+.weather {
+  width: 450px;
+  max-width: 95%;
+  background-color: #0910146b;
+  padding: 15px 5px;
+  border-radius: 4px;
+  margin: auto;
+  position: relative;
+}
+
+.weather::before,
+.weather::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.weather::before {
+  right: -20px;
+  bottom: 10px;
+  background-color: #ffffff99;
+}
+.weather::after {
+  left: -20px;
+  top: 10px;
+  background-color: #03a9f4b5;
+}
+
+.weather .error {
+  color: #ff0b00;
+}
+
+.weather h1 {
+  color: #bfbfbf;
+  font-size: 50px;
+}
+@media (max-width: 500px) {
+  .weather h1 {
+    font-size: 30px;
+  }
+}
+.weather h1.city-name {
+  color: #fafafa;
+  border-bottom: 2px solid white;
+  margin: 0px 50px;
+  font-size: xx-large;
+}
+.weather h1.city-name span {
+  font-size: 16px;
+  color: #3f51b5;
+  margin: 0px 10px;
+  display: block;
+  margin-bottom: 5px;
+}
+.weather form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 15px 0 25px;
+}
+.weather form input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #007bdd;
+  padding: 0px 0px 5px;
+  color: #007bdd;
+  font-size: 18px;
+}
+.weather form input:focus {
+  outline: none;
+}
+.weather form input::placeholder {
+  transition-duration: 0.3s;
+  color: #007bdd;
+  font-size: 18px;
+}
+.weather form input:focus::placeholder {
+  opacity: 0;
+}
+.weather form button {
+  background-color: transparent;
+  border: 2px solid #007bdd;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #007bdd;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  font-size: 12px;
+}
+.weather form button:disabled {
+  color: #9bb2bc;
+}
+.weather form button:not(:disabled):hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+.weather .weather-data {
+  width: 400px;
+  max-width: 90%;
+  margin: 15px auto;
+  background-color: #2eb2f7;
+  border: 2px solid #007bdd;
+  border-radius: 10px;
+  padding: 10px 0px 20px;
+}
+
+.weather .weather-data h2.desc {
+  color: white;
+  margin: -20px 0px 15px;
+}
+.weather .weather-data p {
+  color: #272728;
+  font-size: 18px;
+  background-color: #053d5799;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.weather .weather-data p span {
+  color: #fffdfd;
+  margin-right: 3px;
+}
+.weather .weather-data .icon {
+  color: #abe0fb;
+  margin-right: 5px;
+}
+.css-1gulhci-MuiButton-endIcon {
+  margin-left: 3px !important;
+}
